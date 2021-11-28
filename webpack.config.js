@@ -6,7 +6,7 @@ const path = require("path");
 
 const config = {
   entry: {
-    main: "./public/js/index.js",
+    main: "./src/js/index.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -25,7 +25,7 @@ const config = {
                 return "[path][name].[ext]";
               },
               publicPath(url) {
-                return url.replace("../", "/assets/");
+                return url.replace("../", "/src/");
               },
             },
           },
@@ -53,9 +53,9 @@ const config = {
       theme_color: "#ffffff",
       icons: [
         {
-          src: path.resolve("public/icons/icon-512x512.png"),
+          src: path.resolve("src/icons/icon-512x512.png"),
           sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
-          destination: path.join("public", "icons"),
+          destination: path.join("src", "icons"),
         },
       ],
     }),
