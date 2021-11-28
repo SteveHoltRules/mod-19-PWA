@@ -1,12 +1,12 @@
 const webpack = require("webpack");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-// const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
+const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
 
 const config = {
   entry: {
-    index: "./public/js/index.js",
+    main: "./public/js/index.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -36,6 +36,7 @@ const config = {
       },
     ],
   },
+  // 19.2.5 section
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
