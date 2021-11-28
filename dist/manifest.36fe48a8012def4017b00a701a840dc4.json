@@ -1,0 +1,42 @@
+{
+  "icons": [
+    {
+      "src": "auto/public/icons/icon_512x512.0ca7b4aa5664101f34edb7ce521f8241.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/public/icons/icon_384x384.cc8e6e23a5dc4f0b0772f55df75bf053.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/public/icons/icon_256x256.acce9eaf175ffceca369093b114b5bcf.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/public/icons/icon_192x192.57d76e1edd5810c09da5f005bc3b6ca9.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/public/icons/icon_128x128.375211606c60a16a6651671cbe956b3f.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "auto/public/icons/icon_96x96.3307979fd21678d238ad4c0d014bb034.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Budget App",
+  "short_name": "Budget",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "An App for Budgeting",
+  "background_color": "#01579b",
+  "theme_color": "#ffffff"
+}
