@@ -2,15 +2,13 @@
   "name": "budget-app",
   "version": "1.0.0",
   "description": "",
-  "main": "public/js/index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js",
+    "start": "node server.js",
     "lite-server": "lite-server",
     "webpack": "webpack --watch",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server",
-    "heroku-prebuild": "npm install --dev",
     "heroku-postbuild": "webpack -p"
   },
   "repository": {

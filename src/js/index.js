@@ -1,5 +1,7 @@
+import _ from 'lodash';
 let transactions = [];
 let myChart;
+
 
 fetch("/api/transaction")
   .then(response => {
