@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -14,11 +15,11 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("src"));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 // routes
