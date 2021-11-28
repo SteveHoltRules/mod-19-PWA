@@ -14,7 +14,7 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("src"));
+app.use(express.static("dist"));
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
