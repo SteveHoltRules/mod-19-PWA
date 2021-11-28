@@ -9,7 +9,8 @@
     "lite-server": "lite-server",
     "webpack": "webpack --watch",
     "build": "webpack",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
