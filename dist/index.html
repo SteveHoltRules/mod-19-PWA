@@ -45,14 +45,14 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="./src/idb.js"></script>
-  <script src="./src/index.js"></script>
+  <script src="./idb.bundle.js"></script>
+  <script src="./main.bundle.js"></script>
 </body>
 <script>
   // 19.4.4 script
   (function () {
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./service-worker.js")
+      navigator.serviceWorker.register("./serviceworker.bundle.js")
         .then(() => console.log("Service Worker registered successfully."))
         .catch(error => console.log("Service Worker registration failed:", error));
     }

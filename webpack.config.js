@@ -7,7 +7,8 @@ const path = require("path");
 const config = {
   entry: {
     main: "./src/js/index.js",
-    idb: "./src/js/index.js"
+    idb: "./src/js/index.js",
+    serviceworker: "./src/service-worker.js"
   },
   output: {
     filename: "[name].bundle.js",
